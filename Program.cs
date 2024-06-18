@@ -1,4 +1,4 @@
-﻿using Cowsay;
+﻿using CowsayClass;
 
 Console.Clear();
 Console.Write("Tell me what you want to say: ");
@@ -6,7 +6,7 @@ string? input = Console.ReadLine();
 
 if (!string.IsNullOrEmpty(input))
 {
-    Cowsay.Cowsay cowsay = new();
+    Cowsay cowsay = new();
     cowsay.CowsayEvent += OnCowSayEvent;
     cowsay.Say(input);
 }
