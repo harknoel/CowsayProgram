@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace CowsayProgram;
+namespace Cowsay;
 public class Cowsay
 {
     public event EventHandler<CowsayEventArgs>? CowsayEvent;
